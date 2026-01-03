@@ -1,0 +1,17 @@
+.icon {
+  display: inline-block; /* CRITICAL: Allows transforms to work */
+  font-size: 24px;
+  color: #fff;
+  /* Transition both the transform and the icon change if possible */
+  transition: transform 0.3s ease-in-out; 
+  background-color: transparent;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0 !important;
+  border-radius: 4px;
+}

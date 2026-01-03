@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap');
+.calendar-container {
+  font-family: 'Times New Roman', serif; /* Or 'Playfair Display' for a modern serif look */
+  width: 300px;
+  color: #555;
+  text-align: center;
+}
+
+.calendar-header, .calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+}
+
+.calendar-header {
+  font-weight: 500;
+  padding-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.calendar-grid span {
+  padding: 10px 0;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The Circle Effect */
+.active {
+  border: 1px solid #999;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
