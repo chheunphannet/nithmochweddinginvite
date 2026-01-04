@@ -57,7 +57,7 @@ const WeddingInvitation = () => {
         </div>
         <h5
           style={{
-            padding: " 0 40px",
+            padding: " 0 30px",
             margin: "0",
             fontFamily: "Kdam Thmor Pro",
           }}
@@ -87,7 +87,7 @@ const WeddingInvitation = () => {
           <h2>ធុល ស្រីម៉ុច</h2>
         </div>
       </div>
-      <h5 style={{ fontFamily: "Kdam Thmor Pro", padding: "0 40px", margin: "0"}}>
+      <h5 style={{ fontFamily: "Kdam Thmor Pro", padding: "0 30px", margin: "0"}}>
         ពិសារភោជនាហារប្រព្រឹត្តទៅនៅ ថ្ងៃសុក្រ ៥កើត ខែមាឃ ឆ្នាំម្សាញ់ សប្តស័ក
         ព.ស. ២៥៦៩ ត្រូវនឹងថ្ងៃទី ២៣ ខែមករា ឆ្នាំ២០២៦ វេលាម៉ោង ៥:០០
         នាទីល្ងាចស្ថិតនៅគេហដ្ឋានខាងស្រី ភូមិរំដួល ឃុំគរ ស្រុកព្រៃឈរ
