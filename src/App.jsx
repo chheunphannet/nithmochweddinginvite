@@ -36,7 +36,9 @@ function App() {
             justifyContent: "space-between",
             alignItems: "center",
             padding: "10px 20px",
-            background: "none",
+            background: "transparent",
+            borderRadius: "10px",
+            // border: "1px solid black"
           }}
         >
           <DropDown />
