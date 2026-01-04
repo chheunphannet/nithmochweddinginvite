@@ -7,14 +7,14 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const images = [
-  "/images/slider/IMG_2289.webp",
+  "/images/slider/IMG_2238.webp",
   "/images/slider/IMG_2288.webp",
   "/images/slider/IMG_2287.webp",
   "/images/slider/IMG_2286.webp",
   "/images/slider/IMG_2285.webp",
   "/images/slider/IMG_2284.webp",
   "/images/slider/IMG_2281.webp",
-  "/images/slider/IMG_2279.webp",
+  "/images/slider/IMG_2289.webp",
   "/images/slider/IMG_2278.webp",
   "/images/slider/IMG_2276.webp",
   "/images/slider/IMG_2273.webp",
@@ -36,7 +36,7 @@ const images = [
   "/images/slider/IMG_2244.webp",
   "/images/slider/IMG_2243.webp",
   "/images/slider/IMG_2239.webp",
-  "/images/slider/IMG_2238.webp"
+  "/images/slider/IMG_2279.webp",
 ];
 
 const TrandingSlider = () => {
@@ -54,7 +54,8 @@ const TrandingSlider = () => {
         OUR PRE-WEDDING GALLERY
       </h1>
       <p style={{ ...pStyle, fontFamily: "Caveat, Arial" }}>
-        Our photoshoot took place at <br />Angkor Wat, Siem Reap
+        Our photoshoot took place at <br />
+        Angkor Wat, Siem Reap
       </p>
       <Swiper
         className="tranding-slider"
@@ -89,6 +90,9 @@ const TrandingSlider = () => {
       </Swiper>
       <p style={{ ...pStyle, fontFamily: "Oswald, Arial", fontSize: "13px" }}>
         Swipe the photo left or right to see more.
+      </p>
+      <p style={{ ...pStyle, fontFamily: "Kdam Thmor Pro", fontSize: "13px" }}>
+        អូសលើរូបទៅឆ្មេងឬស្ដាំដើម្បីមើលរូបផ្សេងទៀត
       </p>
     </div>
   );

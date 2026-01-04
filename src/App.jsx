@@ -40,33 +40,28 @@ function App() {
           }}
         >
           <DropDown />
-          <h1
+          <h3
             style={{
               background: "none",
+              color: "#000000ff",
+              fontFamily: "Moulpali, Arial",
               lineHeight: "0",
+              textShadow: "1px 1px 2px rgba(0, 0, 0, 0.1)",
             }}
           >
-            Two Hearts, One Love
-          </h1>
+            សិរីមង្គលអាពាហ៏ពិពាហ៏
+          </h3>
           <div class="spacer"></div>
         </div>
-        <h2
-          style={{
-            background: "none",
-            color: "#ffffffff",
-            fontFamily: "Kdam Thmor Pro",
-          }}
-        >
-          សិរីមង្គលអាពាហ៏ពិពាហ៏
-        </h2>
       </header>
       <main>
         <div
           className="start-image"
           style={{
-            backgroundImage: `linear-gradient(to bottom, #F296AD 2%, transparent 35.0%),
+            backgroundImage: `linear-gradient(to bottom, #ffffffff 1%, transparent 30.0%),
             linear-gradient(to top, #ffffffff 1%, transparent 20.0%),
             url(${bgImage})`,
+            // backgroundImage: `linear-gradient(to top, #ffffffff 1%, transparent 20.0%), url(${bgImage})`,
           }}
         >
           <img
@@ -80,7 +75,7 @@ function App() {
           />
           <div
             style={{
-              marginTop: "12rem",
+              marginTop: "13.5rem",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
@@ -154,15 +149,22 @@ function App() {
             backgroundColor: "#ffffffff",
           }}
         >
-          <h1
+          <h2
             style={{
-              fontFamily: "Caveat, Arial",
+              fontFamily: "Oswald, Arial",
               background: "none",
               color: "#555",
+              margin: "0",
             }}
           >
             Wedding Ceremony Program
-          </h1>
+          </h2>
+          <h3
+            style={{ margin: "0", color: "#555", fontFamily: "Kdam Thmor Pro" }}
+          >
+            កម្មវិធីសិរីមង្គលអាពាហ៏ពិពាហ៏
+          </h3>
+
           <div id="Program">
             <Letter
               insideLetter={insideLetter}
@@ -177,9 +179,21 @@ function App() {
               background: "none",
               color: "#555",
               fontSize: "12px",
+              margin: "0",
             }}
           >
             Click to see Wedding Ceremony Program
+          </p>
+          <p
+            style={{
+              margin: "0",
+              lineHeight: "0.5",
+              color: "#555",
+              fontFamily: "Kdam Thmor Pro",
+              fontSize: "12px",
+            }}
+          >
+            ចុចលើរូបដើម្បីមើលកម្មវិធីសិរីមង្គលអាពាហ៏ពិពាហ៏
           </p>
         </div>
         <div id="Photo">

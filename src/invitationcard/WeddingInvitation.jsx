@@ -12,10 +12,10 @@ const WeddingInvitation = () => {
   };
   return (
     <div className="calendar-container">
-      <h1 style={{ fontFamily: "Oswald, Arial", lineHeight: "0" }}>
+      <h1 style={{ fontFamily: "Oswald, Arial", lineHeight: "0.5" }}>
         INVITATION
       </h1>
-      <h1 style={{lineHeight: "0.1" }}>❧❧</h1>
+      <h1 style={{ lineHeight: "0.1" }}>❧❧</h1>
       <div
         style={{
           display: "flex",
@@ -31,6 +31,7 @@ const WeddingInvitation = () => {
             width: "100%",
             gap: "20px",
             // border: "1px solid black",
+            fontFamily: "Kdam Thmor Pro",
           }}
         >
           <div
@@ -38,29 +39,66 @@ const WeddingInvitation = () => {
               textAlign: "start",
             }}
           >
-            <h5>MR. CHHUON CHHEUN</h5>
-            <h5>MRS. SIM SUN</h5>
+            <h5>លោក ឈួន ឈឿន</h5>
+            <h5>អ្នកស្រី ស៊ីម ស៊ុន</h5>
           </div>
+
           <div
             style={{
               textAlign: "start",
             }}
           >
-            <h5>MR. BROK THEA</h5>
-            <h5>MRS. LONG SREYMAO</h5>
+            <h5>លោក ប្រុក ធា</h5>
+            <h5>អ្នកស្រី ឡុង ស្រីម៉ៅ</h5>
           </div>
         </div>
-        <h6 style={{ padding: "0", margin: "0" }}>
-          CORDIALLY REQUEST THE HONOR OF YOUR PRESENCE ON THE AUSPICIOUS
-          OCCASION OF THE WEDDING OF OUR CHILDREN.
-        </h6>
+        <div>
+          <h3 style={{ fontFamily: "Moulpali" }}>មានកិត្តិយសសូមគោរពអញ្ជើញ</h3>
+        </div>
+        <h5
+          style={{
+            padding: " 0 10px",
+            margin: "0",
+            fontFamily: "Kdam Thmor Pro",
+          }}
+        >
+          ឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា និង ប្រិយមិត្ត
+          អញ្ជើញចូលរួមជាអធិបតី និង ជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យសិរីសួស្តី
+          ជ័យមង្គលក្នុង ពិធីរៀបអាពាហ៍ពិពាហ៍ កូនប្រុស-កូនស្រី របស់យើងខ្ញុំ
+        </h5>
       </div>
 
-      <h2 style={{ fontFamily: "Great Vibes, Arial" }}>
-        Chheun Phannith & Thol Sreymoch
-      </h2>
-      <h3 style={{ fontFamily: "Oswald, Arial" }}>Wedding Date</h3>
-      <div className="calendar-header" style={{ padding: "0 10px" }}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          lineHeight: "1",
+          gap: "20px",
+          fontFamily: "Konkhmer Sleokchher",
+        }}
+      >
+        <div style={{}}>
+          <h4 style={{ fontFamily: "Kdam Thmor Pro" }}>កូនប្រុស</h4>
+          <h2>ឈឺន​ ផាន់និត</h2>
+        </div>
+        <div>
+          <h4 style={{ fontFamily: "Kdam Thmor Pro" }}>កូនស្រី</h4>
+          <h2>ធុល ស្រីម៉ុច</h2>
+        </div>
+      </div>
+      <h5 style={{ fontFamily: "Kdam Thmor Pro", padding: "0 10px", margin: "0"}}>
+        ពិសារភោជនាហារប្រព្រឹត្តទៅនៅ ថ្ងៃសុក្រ ៥កើត ខែមាឃ ឆ្នាំម្សាញ់ សប្តស័ក
+        ព.ស. ២៥៦៩ ត្រូវនឹងថ្ងៃទី ២៣ ខែមករា ឆ្នាំ២០២៦ វេលាម៉ោង ៥:០០
+        នាទីល្ងាចស្ថិតនៅគេហដ្ឋានខាងស្រី ភូមិរំដួល ឃុំគរ ស្រុកព្រៃឈរ
+        ខេត្តកំពង់ចាម ដោយមេត្រី <br />
+        សូមអរគុណ!
+      </h5>
+      <h3 style={{ fontFamily: "Oswald, Arial", marginTop: "40px" }}>Wedding Date</h3>
+      <div
+        className="calendar-header"
+        style={{ padding: "0 10px", fontSize: "13px" }}
+      >
         <span>S</span>
         <span>M</span>
         <span>T</span>

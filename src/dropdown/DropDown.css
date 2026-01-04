@@ -1,10 +1,11 @@
 .icon {
   display: inline-block; /* CRITICAL: Allows transforms to work */
-  font-size: 24px;
-  color: #fff;
+  font-size: 20px;
+  color: #000000;
   /* Transition both the transform and the icon change if possible */
   transition: transform 0.3s ease-in-out; 
   background-color: transparent;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 .rotate {
@@ -14,4 +15,4 @@
 .dropdown-item:hover {
   background-color: #f0f0f0 !important;
   border-radius: 4px;
-}
+} 
