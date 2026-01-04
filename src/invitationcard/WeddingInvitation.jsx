@@ -3,14 +3,64 @@ import './WeddingInvitation.css'
 import CountdownTimer from '../countdown/CountdownTimer'
 
 const WeddingInvitation = () => {
+  const centerItem = {
+    display: "flex",
+    // flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    
+  };
   return (
     <div className="calendar-container">
-      <h1 style={{ fontFamily: "Oswald, Arial" }}>INVITATION</h1>
-      <h2 style={{ fontFamily: "Caveat, Arial" }}>
+      <h1 style={{ fontFamily: "Oswald, Arial", lineHeight: "0" }}>
+        INVITATION
+      </h1>
+      <h1 style={{lineHeight: "0.1" }}>❧❧</h1>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          fontFamily: "Oswald, Arial",
+          // border: "1px solid black",
+        }}
+      >
+        <div
+          style={{
+            ...centerItem,
+            lineHeight: "0",
+            width: "100%",
+            gap: "20px",
+            // border: "1px solid black",
+          }}
+        >
+          <div
+            style={{
+              textAlign: "start",
+            }}
+          >
+            <h5>MR. CHHUON CHHEUN</h5>
+            <h5>MRS. SIM SUN</h5>
+          </div>
+          <div
+            style={{
+              textAlign: "start",
+            }}
+          >
+            <h5>MR. BROK THEA</h5>
+            <h5>MRS. LONG SREYMAO</h5>
+          </div>
+        </div>
+        <h6 style={{ padding: "0", margin: "0" }}>
+          CORDIALLY REQUEST THE HONOR OF YOUR PRESENCE ON THE AUSPICIOUS
+          OCCASION OF THE WEDDING OF OUR CHILDREN.
+        </h6>
+      </div>
+
+      <h2 style={{ fontFamily: "Great Vibes, Arial" }}>
         Chheun Phannith & Thol Sreymoch
       </h2>
       <h3 style={{ fontFamily: "Oswald, Arial" }}>Wedding Date</h3>
-      <div className="calendar-header">
+      <div className="calendar-header" style={{ padding: "0 10px" }}>
         <span>S</span>
         <span>M</span>
         <span>T</span>
@@ -20,7 +70,7 @@ const WeddingInvitation = () => {
         <span>S</span>
       </div>
       <hr className="divider" />
-      <div className="calendar-grid">
+      <div className="calendar-grid" style={{ padding: "0 10px" }}>
         <span></span>
         <span></span>
         <span></span>

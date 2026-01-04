@@ -131,10 +131,6 @@ function App() {
             </div>
           </div>
         </div>
-
-        <div className="invitation-card-container">
-          {/* <WeddingInvitation /> */}
-        </div>
         <div
           style={{
             display: "flex",
@@ -199,7 +195,7 @@ function App() {
           textAlign: "center",
           background: "none",
           color: "#555",
-          fontFamily: "Caveat, Arial",
+          fontFamily: "Great Vibes, Arial",
         }}
       >
         <h1 style={{ background: "none", padding: "0 20px", fontSize: "23px" }}>

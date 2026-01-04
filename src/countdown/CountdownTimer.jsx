@@ -34,7 +34,7 @@ const CountdownTimer = () => {
 
   return (
     <div style={{ textAlign: "center", fontFamily: "Oswald, Arial" }}>
-      <div style={{ fontSize: "2rem", fontWeight: "bold" }}>
+      <div style={{ fontSize: "3rem", fontWeight: "bold" }}>
         {timeLeft.days}d : {timeLeft.hours}h : {timeLeft.minutes}m :{" "}
         {timeLeft.seconds}s
       </div>

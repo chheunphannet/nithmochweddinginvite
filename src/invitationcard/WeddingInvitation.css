@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap');
 .calendar-container {
   font-family: 'Times New Roman', serif; /* Or 'Playfair Display' for a modern serif look */
-  width: 300px;
+  width: 100%;
   color: #555;
   text-align: center;
 }
