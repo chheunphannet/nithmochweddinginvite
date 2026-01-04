@@ -209,18 +209,18 @@ function App() {
           textAlign: "center",
           background: "none",
           color: "#555",
-          fontFamily: "Great Vibes, Arial",
+          fontFamily: "Oswald",
         }}
       >
-        <h1 style={{ background: "none", padding: "0 20px", fontSize: "23px" }}>
-          Thank you! <br /> to everyone who joined us for our wedding! We are so
-          happy to share these memories with you.
-        </h1>
+        <p style={{ background: "none", padding: "0 20px", fontSize: "10px" }}>
+          Thank you! <br /> to everyone who joined us for our wedding!
+          <br /> We are so happy to share these memories with you.
+        </p>
         <div
           style={{
             backgroundColor: "#555",
             width: "100%",
-            height: "30px",
+            height: "25.0px",
             marginTop: "40px",
             textAlign: "center",
             alignItems: "center",
