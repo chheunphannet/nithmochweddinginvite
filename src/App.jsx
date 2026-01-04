@@ -50,9 +50,15 @@ function App() {
           </h1>
           <div class="spacer"></div>
         </div>
-        <p style={{ background: "none", color: "#000000" }}>
-          Wedding Invitation
-        </p>
+        <h2
+          style={{
+            background: "none",
+            color: "#ffffffff",
+            fontFamily: "Kdam Thmor Pro",
+          }}
+        >
+          សិរីមង្គលអាពាហ៏ពិពាហ៏
+        </h2>
       </header>
       <main>
         <div
