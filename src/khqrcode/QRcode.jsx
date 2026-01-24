@@ -43,7 +43,7 @@ function usePaidUserSSE(onPaid, baseUrl, md5) {
     if (!md5) return;
 
     console.log("Attempting SSE connection for MD5:", md5);
-    const es = new EventSource(`${baseUrl}/v2/new-paid-users`);
+    const es = new EventSource(`api/v2/new-paid-users`);
 
     es.addEventListener("paid-user", (e) => {
       console.log("Event received:", e.data);
@@ -105,7 +105,7 @@ function Qrcode({
       try {
         setIsPaid(false);
 
-        const response = await fetch(`${BASE_URL}/generate-khqr`, {
+        const response = await fetch(`api/generate-khqr`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(individual),
