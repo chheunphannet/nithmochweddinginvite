@@ -1,0 +1,155 @@
+.modal-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); /* darkened for better focus */
+    z-index: 1000; /* ensures it stays on top of other content */
+    font-family: 'Kdam Thmor Pro';
+}
+
+.modal-container{
+    background-color: #fff;
+    line-height: 0;
+    width: 95%;
+    max-width: 345px;
+    border-radius: 10px;
+    -webkit-overflow-scrolling: touch;
+    /* max-height: 90vh; */
+    overflow-y: auto;
+
+    animation: popToTop 0.5s ease-out;
+}
+
+@keyframes popToTop {
+    0%{
+        opacity: 0;
+        transform: translateY(50px) scale(0.9);
+    }
+    60%{
+        opacity: 1;
+        transform: translate(-8) scale(1.03);
+    }
+    100%{
+        transform: translate(0) scale(1);
+    }
+}
+
+
+.form-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0 10px 0 10px;
+    height: fit-content;
+}
+
+.form-header i{
+    font-size: 3rem;
+}
+
+.form-header i:active{
+    color: black;
+    opacity: 0.7;
+}
+
+.form-wrapper{
+    padding: 2rem;
+}
+
+.form-wrapper form{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.form-control {
+    font-family: 'Battambang';
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5rem;
+    font-weight: bolder;
+}
+
+.form-control input {
+    /* width: 100%; */
+    padding:5px;
+    font-family: 'Battambang';
+    font-size: 13px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.form-control label{
+    font-family: 600;
+}
+
+.form-control input:focus{
+    outline: 1px #007bff solid;
+    /* border: 0; */
+}
+
+.form-control select{
+   border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Battambang';
+    padding:5px;
+}
+
+.form-control select:focus{
+     outline: 1px #007bff solid;
+}
+
+.submit-btn {
+    font-family: 'Battambang';
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-btn:active{
+    opacity: 0.7;
+}
+
+.group-input{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.form-control textarea{
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    font-family: 'Battambang';
+}
+
+.form-control textarea:focus{
+    outline: 1px #007bff solid;
+}
+
+.modal-qr{
+    width: 85%;
+    max-width: 430px;
+}
+
+input,
+textarea,
+select,
+button {
+  touch-action: manipulation;
+}
+

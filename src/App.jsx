@@ -12,13 +12,17 @@ import backCover from '/images/IMG_2244.jpg'
 import WeddingInvitation from './invitationcard/WeddingInvitation.jsx'
 import Location from './location/Location.jsx'
 import TrandingSlider from './gallery/TrandingSlider.jsx'
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom"
+import FormPopup from './formpopup/FormPopup.jsx'
+import PaidTable from './paidtable/PaidTable.jsx'
+
+  const baseUrl = import.meta.env.VITE_BASE_URL;
 
 function App() {
   const [searchParams] = useSearchParams(); 
   const [guestName, setGuestName] = useState("");
   const [fontSize, setFontSize] = useState(13);
-
+  const [showModal, setShowModal] = useState(false);
   useEffect(() => {
     const name = searchParams.get("name");
     const size = searchParams.get("size");
@@ -38,7 +42,6 @@ function App() {
             padding: "10px 20px",
             background: "transparent",
             borderRadius: "10px",
-            // border: "1px solid black"
           }}
         >
           <DropDown />
@@ -200,6 +203,54 @@ function App() {
         </div>
         <div id="Photo">
           <TrandingSlider />
+        </div>
+        <div id="payments">
+          <h2>ចងដៃតាមរយៈ QR CODE</h2>
+
+          <div className="heart-btn">
+            {/* <h2>ចងដៃតាមរយៈ QR CODE</h2> */}
+            <lord-icon
+              src="https://cdn.lordicon.com/hsabxdnr.json"
+              trigger="loop"
+              state="morph-select"
+              colors="primary:#ee66aa"
+              style={{ width: "100px", height: "100px" }}
+            ></lord-icon>
+
+            <button className="jongdia" onClick={() => setShowModal(true)}>
+              ចងដៃ
+            </button>
+          </div>
+
+          <div className="img-bg-name">
+            <div className="control-bg-img-boy">
+              <div
+                style={{ backgroundImage: `url("/images/bgboy.JPG")` }}
+                className="boy"
+              ></div>
+              <h3 style={{ margin: "0" }}>ឈឺន ផាន់និត</h3>
+            </div>
+            <div className="control-bg-img-girl">
+              <h3 style={{ margin: "0" }}>ធុល ស្រីម៉ុច</h3>
+              <div
+                style={{ backgroundImage: `url("/images/bggirl.JPG")` }}
+                className="girl"
+              ></div>
+            </div>
+          </div>
+
+          <div className="data_table">
+            <PaidTable baseUrl={baseUrl} />
+          </div>
+
+          {showModal && (
+            <FormPopup
+              onClose={() => setShowModal(false)}
+              setShowModal={setShowModal}
+            />
+          )}
+
+          {/* <p style={{ fontSize: "12px" }}>ចុចដើម្បីចងដៃតាមរយៈ QR CODE</p> */}
         </div>
         <div style={{ paddingBottom: "40px" }} id="Location">
           <Location />
