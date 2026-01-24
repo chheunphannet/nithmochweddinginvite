@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { QRCodeSVG } from "qrcode.react";
-import './Qrcode.css'
+import './QRcode.css'
 
 const KHQRCode = ({ qrString, currency, amount, seconds, handleQrDisplay }) => {
   if (!qrString) return <p>No QR data available</p>;
