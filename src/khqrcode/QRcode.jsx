@@ -43,7 +43,7 @@ function usePaidUserSSE(onPaid, baseUrl, md5) {
     if (!md5) return;
 
     console.log("Attempting SSE connection for MD5:", md5);
-    const es = new EventSource(`api/v2/new-paid-users`);
+    const es = new EventSource("/api/v2/new-paid-users");
 
     es.addEventListener("paid-user", (e) => {
       console.log("Event received:", e.data);
