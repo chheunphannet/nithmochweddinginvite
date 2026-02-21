@@ -43,9 +43,10 @@ function usePaidUserSSE(onPaid, baseUrl, md5) {
     if (!md5) return;
 
     console.log("Attempting SSE connection for MD5:", md5);
-    const es = new EventSource("/api/v2/new-paid-users");
-
-    es.addEventListener("paid-user", (e) => {
+    const es = new EventSource(
+      `${(baseUrl || "").replace(/\/$/, "")}/v2/new-paid-users`
+    );
+    const handlePaidEvent = (e) => {
       console.log("Event received:", e.data);
       try {
         const data = JSON.parse(e.data);
@@ -58,7 +59,11 @@ function usePaidUserSSE(onPaid, baseUrl, md5) {
       } catch (err) {
         console.error("Error parsing SSE JSON:", err);
       }
-    });
+    };
+
+    // Handle default SSE messages and keep compatibility with custom event names.
+    es.onmessage = handlePaidEvent;
+    es.addEventListener("paid-user", handlePaidEvent);
 
     es.onerror = (err) => {
       console.error("SSE error", err);
@@ -105,11 +110,14 @@ function Qrcode({
       try {
         setIsPaid(false);
 
-        const response = await fetch(`api/generate-khqr`, {
+        const response = await fetch(
+          `${(BASE_URL || "").replace(/\/$/, "")}/generate-khqr`,
+          {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(individual),
-        });
+          }
+        );
 
         const data = await response.json();
 

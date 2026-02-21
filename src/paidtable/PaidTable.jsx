@@ -6,8 +6,7 @@ const PaidTable = ({ baseUrl }) => {
   useEffect(() => {
     const getAllPaidUsers = async () => {
       try {
-        // const endPoint = `${baseUrl}/all/paid`;
-        const endPoint = "/api/all/paid";
+        const endPoint = `${(baseUrl || "").replace(/\/$/, "")}/all/paid`;
         const response = await fetch(endPoint, {
           method: "GET",
           headers: { "Content-Type": "application/json" },
