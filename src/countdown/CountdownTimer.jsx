@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const CountdownTimer = () => {
-  const targetDate = new Date("January 23, 2026 00:00:00").getTime();
+  const targetDate = new Date("February 26, 2026 00:00:00").getTime();
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
@@ -42,10 +42,11 @@ const CountdownTimer = () => {
         timeLeft.hours === 0 &&
         timeLeft.minutes === 0 &&
         timeLeft.seconds === 0 && <p>The Wedding has started!</p>}
-        <p className="event-info">
-            Which Will Be Held<br />
-            On Friday 23<sup>rd</sup> January 2026, At 5:00 P.m,
-        </p>
+      <p className="event-info">
+        Which Will Be Held
+        <br />
+        On Friday 23<sup>rd</sup> January 2026, At 5:00 P.m,
+      </p>
     </div>
   );
 };

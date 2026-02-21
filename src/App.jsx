@@ -1,28 +1,29 @@
-import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import bgImage from '/images/IMG_2261.JPG'
-import bgName from '/images/nithmochname.png'
-import DropDown from './dropdown/DropDown'
-import Letter from './letter/Letter'
-import insideLetter from '/images/insideletter.png'
-import coverImage from '/images/IMG_2256.JPG'
-import backCover from '/images/IMG_2244.jpg'
-import WeddingInvitation from './invitationcard/WeddingInvitation.jsx'
-import Location from './location/Location.jsx'
-import TrandingSlider from './gallery/TrandingSlider.jsx'
-import { useSearchParams } from "react-router-dom"
-import FormPopup from './formpopup/FormPopup.jsx'
-import PaidTable from './paidtable/PaidTable.jsx'
+import { useEffect, useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import bgImage from "/images/IMG_2261.JPG";
+import bgName from "/images/nithmochname.png";
+import DropDown from "./dropdown/DropDown";
+import Letter from "./letter/Letter";
+import insideLetter from "/images/insideletter.png";
+import coverImage from "/images/IMG_2256.JPG";
+import backCover from "/images/IMG_2244.jpg";
+import WeddingInvitation from "./invitationcard/WeddingInvitation.jsx";
+import Location from "./location/Location.jsx";
+import TrandingSlider from "./gallery/TrandingSlider.jsx";
+import { useSearchParams } from "react-router-dom";
+import FormPopup from "./formpopup/FormPopup.jsx";
+import PaidTable from "./paidtable/PaidTable.jsx";
 
-  const baseUrl = import.meta.env.VITE_BASE_URL;
+const baseUrl = import.meta.env.VITE_BASE_URL;
 
 function App() {
-  const [searchParams] = useSearchParams(); 
+  const [searchParams] = useSearchParams();
   const [guestName, setGuestName] = useState("");
   const [fontSize, setFontSize] = useState(13);
   const [showModal, setShowModal] = useState(false);
+  
   useEffect(() => {
     const name = searchParams.get("name");
     const size = searchParams.get("size");
@@ -63,8 +64,8 @@ function App() {
         <div
           className="start-image"
           style={{
-            backgroundImage: `linear-gradient(to bottom, #ffffffff 1%, transparent 30.0%),
-            linear-gradient(to top, #ffffffff 1%, transparent 20.0%),
+            backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1%, transparent 30.0%),
+            linear-gradient(to top, rgba(0, 0, 0, 0.5) 1%, transparent 20.0%),
             url(${bgImage})`,
             // backgroundImage: `linear-gradient(to top, #ffffffff 1%, transparent 20.0%), url(${bgImage})`,
           }}
@@ -297,4 +298,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
