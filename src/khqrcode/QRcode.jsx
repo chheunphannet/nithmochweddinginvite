@@ -42,17 +42,17 @@ function usePaidUserSSE(onPaid, baseUrl, md5) {
   useEffect(() => {
     if (!md5) return;
 
-    console.log("Attempting SSE connection for MD5:", md5);
+    // console.log("Attempting SSE connection for MD5:", md5);
     const es = new EventSource(
       `${(baseUrl || "").replace(/\/$/, "")}/v2/new-paid-users`
     );
     const handlePaidEvent = (e) => {
-      console.log("Event received:", e.data);
+      // console.log("Event received:", e.data);
       try {
         const data = JSON.parse(e.data);
 
         if (data.md5 === md5) {
-          console.log("Payment confirmed for:", md5);
+          // console.log("Payment confirmed for:", md5);
           onPaid(data);
           es.close();
         }
@@ -70,7 +70,7 @@ function usePaidUserSSE(onPaid, baseUrl, md5) {
     };
 
     return () => {
-      console.log("Closing SSE connection");
+      // console.log("Closing SSE connection");
       es.close();
     };
   }, [baseUrl, md5, onPaid]); // Re-run only if md5 changes
@@ -96,7 +96,7 @@ function Qrcode({
   const [isPaid, setIsPaid] = useState(false);
 
   const handlePaymentSuccess = useCallback((data) => {
-    console.log("Payment callback triggered!", data);
+    // console.log("Payment callback triggered!", data);
     setIsPaid(true);
     setIsCounting(false); // Stop timer
   }, []);

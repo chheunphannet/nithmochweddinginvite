@@ -23,7 +23,7 @@ function App() {
   const [guestName, setGuestName] = useState("");
   const [fontSize, setFontSize] = useState(13);
   const [showModal, setShowModal] = useState(false);
-  
+
   useEffect(() => {
     const name = searchParams.get("name");
     const size = searchParams.get("size");
@@ -64,10 +64,10 @@ function App() {
         <div
           className="start-image"
           style={{
-            backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 1%, transparent 30.0%),
-            linear-gradient(to top, rgba(0, 0, 0, 0.5) 1%, transparent 20.0%),
-            url(${bgImage})`,
-            // backgroundImage: `linear-gradient(to top, #ffffffff 1%, transparent 20.0%), url(${bgImage})`,
+            // backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255 0.1) 1%, transparent 30.0%),
+            // linear-gradient(to top, rgba(255, 255, 255 0.1) 1%, transparent 20.0%),
+            // url(${bgImage})`,
+            backgroundImage: `linear-gradient(to bottom, #ffffffff 1%, transparent 20.0%), url(${bgImage})`,
           }}
         >
           <img
